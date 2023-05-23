@@ -1,0 +1,16 @@
+<h2>Usuarios</h2>
+
+{{#if hayUsers}}
+<ul style="list-style: none;">
+    {{#each users}}
+    <li>{{this.first_name}}</li>
+    <li>{{this.age}}</li>
+    <li>{{this.email}}</li>
+    <li>{{this.rol}}</li>
+    <br>
+    {{/each}}
+</ul>
+<a href="http://localhost:8080/profile">Volver al perfil</a>
+{{else}}
+<p>No hay datos</p>
+{{/if}}
